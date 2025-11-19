@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-
+import { Toaster } from 'react-hot-toast';
 import { SITE } from '~/config.js';
 
 import Providers from '~/components/atoms/Providers';
@@ -37,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps) {
           <Header />
           {/* <main>{children}</main> */}
           {children}
+          <Toaster position="top-right" />
           <Footer2 />
         </Providers>
       </body>

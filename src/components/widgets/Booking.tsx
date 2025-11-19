@@ -28,7 +28,7 @@ const Contact = ({ header, id, title, image, hasBackground }: BookingProps) => (
               {/* Right column - Calendar */}
               <div className="w-full  md:w-3/5">
                 <Cal
-                  calLink="tafadzwa-k/braids"
+                  calLink="tah-s-beauty-haven/hair-appointment"
                   config={{ layout: 'month-view', hideEventTypeDetails: false }}
                   height={700}
                   style={{ width: '100%' }}

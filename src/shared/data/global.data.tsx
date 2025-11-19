@@ -52,10 +52,10 @@ export const headerData: HeaderProps = {
         //   label: 'Login',
         //   href: '/login',
         // },
-        {
-          label: 'About',
-          href: '/about',
-        },
+        // {
+        //   label: 'About',
+        //   href: '/about',
+        // },
         {
           label: 'Terms & Conditions',
           href: '/terms',
@@ -63,10 +63,6 @@ export const headerData: HeaderProps = {
         {
           label: 'Privacy Policy',
           href: '/privacy',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
         },
       ],
     },

@@ -16,17 +16,18 @@ import qrcode from '~/assets/images/wa-qrcode.svg';
 
 // Hero data on Contact page *******************
 export const heroContact: HeroProps = {
+  staticImage: {
+    src: qrcode,
+    alt: 'Contact QR code',
+    className: 'flex justify-center items-center w-[900px] h-[400px] md:h-[600px] lg:h-[600px] ',
+  },
   title: 'Get in touch with us',
   subtitle: (
     <>
       <span className="hidden md:inline">{`Thank you for trusting us with your beauty! We're excited to hear from you.`}</span>{' '}
-      {`Our team can assist with any questions you might have.`}
+      {`We will assist with any questions you might have.`}
     </>
   ),
-  staticImage: {
-    src: qrcode,
-    alt: 'Hero TailNext',
-  },
 
   // tagline: 'Demo Contact Page',
 };
@@ -48,17 +49,17 @@ export const contact2Contact: ContactProps = {
     {
       title: 'Our Address',
       description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
-      icon: IconMapPin,
+      icon: <IconMapPin />,
     },
     {
       title: 'Contact',
       description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
-      icon: IconPhoneCall,
+      icon: <IconPhoneCall />,
     },
     {
       title: 'Working hours',
       description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
-      icon: IconClock,
+      icon: <IconClock />,
     },
   ],
   form: {
@@ -138,17 +139,17 @@ export const features2Contact: FeaturesProps = {
     {
       title: 'Have a question?',
       description: 'See our frequently asked questions on the home page.',
-      icon: IconHelp,
+      icon: <IconHelp />,
       callToAction: {
         text: 'Go to FAQs',
         // href: '/faqs',
-        href: '/',
+        href: '/#faqsTwo-on-home',
       },
     },
     {
       title: 'Chat with us',
       description: 'Send us a Whatsapp message.',
-      icon: IconBrandWhatsapp,
+      icon: <IconBrandWhatsapp />,
       callToAction: {
         text: "Let's chat!",
         href: 'https://wa.me/27787791860',
@@ -157,7 +158,7 @@ export const features2Contact: FeaturesProps = {
     {
       title: 'Ready to change your style?',
       description: 'Schedule your appointment.',
-      icon: IconCalendarCheck,
+      icon: <IconCalendarCheck />,
       callToAction: {
         text: 'Book Now',
         href: '/booking',

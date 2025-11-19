@@ -27,7 +27,7 @@ export default function ClientSwiper({ images }: ClientSwiperProps) {
     >
       {images?.map((img, i: number) => (
         <SwiperSlide key={i}>
-          <Image src={img.src} alt={img.alt} fill className="object-cover" placeholder="blur" priority />
+          <Image src={img.src} alt="Image" fill className="object-cover" placeholder="blur" priority />
         </SwiperSlide>
       ))}
     </Swiper>

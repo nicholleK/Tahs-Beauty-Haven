@@ -27,7 +27,7 @@ const Features4 = ({
           <Image
             className="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg"
             src={image.src}
-            alt={image.alt}
+            alt="Image"
             width={728}
             height={320}
             sizes="(max-width: 64rem) 100vw, 1024px"

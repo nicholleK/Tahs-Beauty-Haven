@@ -1,5 +1,5 @@
 module.exports.SITE = {
-  name: 'Hairdressing Booking System',
+  name: 'Tahs Beauty Haven',
 
   origin: 'https://tailnext.vercel.app',
   basePathname: '/',

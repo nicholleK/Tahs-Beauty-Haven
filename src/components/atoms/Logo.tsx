@@ -1,7 +1,26 @@
+import Image from 'next/image';
+
 const Logo = () => (
-  <span className="ml-2 self-center whitespace-nowrap text-2xl font-bold text-gray-900 dark:text-white md:text-xl">
-    Tah's Beauty Haven
-  </span>
+  <>
+    <div className="ml-2 flex items-center">
+      <Image
+        src={'/logo/vector/default-monochrome-black.svg'}
+        className="dark:hidden"
+        alt="TBH logo"
+        width={450}
+        height={100}
+        priority
+      />
+      <Image
+        src={'logo/vector/default-monochrome-white.svg'}
+        className="hidden dark:block"
+        alt="TBH logo"
+        width={450}
+        height={100}
+        priority
+      />
+    </div>
+  </>
 );
 
 export default Logo;

@@ -12,13 +12,15 @@ import Pricing from '~/components/widgets/Pricing';
 // import Team from '~/components/widgets/Team';
 import CallToAction2 from '~/components/widgets/CallToAction2';
 import Contact from '~/components/widgets/Contact';
+import FloatingBtn from '~/components/FloatingBtn';
 import {
   // callToAction2Home,
   contactHome,
   // contentHomeOne,
   contentHomeTwo,
   faqs2Home,
-  featuresHome,
+  floatingBtn,
+  // featuresHome,
   heroHome,
   // pricingHome,
   // socialProofHome,
@@ -37,10 +39,10 @@ export default function Page() {
       <Hero {...heroHome} />
       <Testimonials {...servicesHomeOverview} />
       {/* <SocialProof {...socialProofHome} /> */}
-      <Features {...featuresHome} />
+      {/* <Features {...featuresHome} /> */}
       {/* <Content {...contentHomeOne} /> */}
       <Content {...contentHomeTwo} />
-
+      {/* <FloatingBtn {...floatingBtn} /> */}
       <FAQs2 {...faqs2Home} />
       {/* <Pricing {...pricingHome} /> */}
       {/* <Team {...teamHome} /> */}

@@ -4,7 +4,7 @@
 import Cal from '@calcom/embed-react';
 
 type CalEmbedProps = {
-  calLink: string; // your Cal.com link
+  calLink: string; //  Cal.com link
   height?: string | number; // optional height
   config?: Record<string, any>;
   style: Record<string, any>;
