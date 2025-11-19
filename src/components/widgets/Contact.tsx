@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Calendly from '../Calendly';
 import Cal from '../Cal';
 import React from 'react';
-import { colors } from '@mui/material';
 import DividerLine from '../common/DividerLine';
 
 const Contact = ({ header, content, items, form, id, hasBackground = true, image, background }: ContactProps) => (
