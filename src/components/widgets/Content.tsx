@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import { IconChevronRight } from '@tabler/icons-react';
 
@@ -10,7 +11,7 @@ import Background from '../common/Background';
 const Content = ({
   header,
   content,
-  items,
+  items2,
   image,
   isReversed,
   isAfterContent,
@@ -33,7 +34,7 @@ const Content = ({
                 src={image.src}
                 width={828}
                 height={828}
-                alt={image.alt}
+                alt="Image"
                 sizes="(max-width: 768px) 100vw, 432px"
                 placeholder="blur"
                 quality={50}
@@ -54,9 +55,9 @@ const Content = ({
           )}
 
           <ItemGrid
-            items={items}
+            items2={items2}
             columns={1}
-            defaultIcon={IconChevronRight}
+            // defaultIcon={IconChevronRight}
             containerClass="gap-4 md:gap-y-6"
             panelClass="flex max-w-full"
             titleClass="text-lg font-medium leading-6 text-gray-900 dark:text-white mt-1 mb-2"

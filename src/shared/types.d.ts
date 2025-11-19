@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
-import { ReactElement } from 'react';
-import type { TablerIcon } from "@tabler/icons-react"
+import { CSSProperties, ReactElement } from 'react';
+import type { ReactNode, TablerIcon } from "@tabler/icons-react"
 
 type Widget = {
   id?: string;
@@ -11,6 +11,7 @@ type Widget = {
 type WrapperTagProps = Widget & {
   children: React.ReactNode;
   containerClass?: string;
+  background?: React.ReactNode | React.CSSProperties ;
 };
 
 type BackgroundProps = {
@@ -36,7 +37,7 @@ type HeadlineProps = {
 type Icon = TablerIcon;
 
 type CallToActionType = {
-  text?: string;
+  text?: ReactNode | string | Icon;
   href: string;
   icon?: Icon;
   targetBlank?: boolean;
@@ -59,7 +60,7 @@ type Input = {
   type: string;
   label?: string;
   value?: string;
-  name?: string;
+  name: string;
   autocomplete?: string;
   placeholder?: string;
 };
@@ -106,37 +107,59 @@ type FormProps = {
 
 type Image = {
   link?: string;
-  src: string | StaticImageData ;
-  alt: string;
+  src: StaticImageData | string  ;
+  alt?: string;
+  style?:CSSProperties;
+  className?:string;
+  
 };
 
 type Item = {
   title?: string | boolean | number | ReactElement;
-  description?: string | Array<string>;
+  description?: string | Array<string> | ReactElement;
   href?: string;
   form?: SmallForm;
-  icon?: Icon;
+  icon?:  ForwardRefExoticComponent<IconProps & RefAttributes<SVGSVGElement>>
   callToAction?: CallToActionType;
+  image?: Image;
+  color?: CSSProperties
+  isCard?:Boolean
+  
+};
+type Item2 = {
+  title?: string | boolean | number | ReactElement;
+  description?: string | Array<string> | ReactElement;
+  href?: string;
+  form?: SmallForm;
+  icon?:  ForwardRefExoticComponent<IconProps & RefAttributes<SVGSVGElement>>
+  callToAction?: CallToActionType;
+  image?: Image;
+  color?: CSSProperties
+ 
 };
 
 type ItemGrid = {
   id?: string;
   items?: Array<Item>;
+  items2?: Array<Item2>;
   columns?: number;
   defaultColumns?: number;
-  defaultIcon?: Icon;
+  defaultIcon?: ReactElement;
   containerClass?: string;
   panelClass?: string;
   iconClass?: string;
   titleClass?: string;
   descriptionClass?: string;
   actionClass?: string;
+  image?: Image;
+   showBullets?: Boolean
+   callToAction?: CallToActionType;
 };
 
 type Timeline = {
   id?: string;
   items?: Array<Item>;
-  defaultIcon?: Icon;
+  defaultIcon?: ReactElement;
   containerClass?: string;
   panelClass?: string;
   iconClass?: string;
@@ -238,13 +261,15 @@ type WindowSize = {
 
 // WIDGETS
 type HeroProps = {
-  title?: string | ReactElement;
+  title?: string ;
   subtitle?: string | ReactElement;
   tagline?: string;
   callToAction?: CallToActionType;
   callToAction2?: CallToActionType;
   image?: Image[];
-  staticImage?: Image
+  staticImage?: Image;
+  variant?: string;
+
 };
 
 type FAQsProps = Widget & {
@@ -272,6 +297,7 @@ type CallToActionProps = Widget & {
 type FeaturesProps = Widget & {
   header?: Header;
   items?: Array<Item>;
+  items2?: Array<Item2>;
   /** How many columns should it have? */
   columns?: 1 | 2 | 3;
   /** Do you want the image to be displayed? */
@@ -279,11 +305,18 @@ type FeaturesProps = Widget & {
   image?: Image;
   isBeforeContent?: boolean;
   isAfterContent?: boolean;
+   callToAction?: CallToActionType;
+};
+
+type FloatingBtnProps = {
+   callToAction?: CallToActionType;
+
 };
 
 type ContentProps = Widget & {
   header?: Header;
   content?: string;
+  items2?: Array<Item2>;
   items?: Array<Item>;
   image?: Image;
   isReversed?: boolean;
@@ -345,6 +378,8 @@ type ContactProps = Widget & {
   items?: Array<Item>;
   image?: Image
   form?: FormProps;
+  background?: CSSProperties
+  
   
 };
 

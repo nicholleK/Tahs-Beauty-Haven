@@ -1,6 +1,7 @@
 'use client';
-
+import toast from 'react-hot-toast';
 import { useState } from 'react';
+import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
 import { FormProps } from '../../shared/types';
 import { FormSubmission } from 'app/api/FormSubmission';
@@ -16,7 +17,7 @@ const Form = ({
   btnPosition,
   containerClass,
 }: FormProps) => {
-  const [inputValues, setInputValues] = useState([]);
+  const [inputValues, setInputValues] = useState<{ [key: string]: string }>({});
   const [radioBtnValue, setRadioBtnValue] = useState('');
   const [textareaValues, setTextareaValues] = useState('');
   const [checkedState, setCheckedState] = useState<boolean[]>(new Array(checkboxes && checkboxes.length).fill(false));
@@ -43,17 +44,41 @@ const Form = ({
 
   // Update checkbox radio buttons
   const changeCheckboxHandler = (index: number) => {
-    setCheckedState((prevValues) => {
-      const newValues = [...(prevValues as boolean[])];
-      newValues.map(() => {
-        newValues[index] = !checkedState[index];
-      });
-      return newValues;
+    setCheckedState((prev) => {
+      const updated = [...prev];
+      updated[index] = !updated[index];
+      return updated;
     });
   };
 
+  const handleSendMssg = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Check required fields
+    const requiredFields = ['name', 'lastName', 'email'];
+    const missing = requiredFields.filter((field) => !inputValues[field]?.trim());
+    if (missing.length > 0) {
+      toast.error('Please fill in all the fields.');
+      return;
+    }
+
+    // Build message
+    const finalMessage = `
+      Hello! I would like to get in touch regarding: ${radioBtnValue || 'Not specified'}.
+
+      Name: ${inputValues['name']} ${inputValues['lastName']}
+      Email: ${inputValues['email']}
+
+      Message:
+      ${textareaValues || 'No additional message provided.'}
+        `.trim();
+
+    toast.success('Opening WhatsApp');
+    window.open(`https://wa.me/27787791860?text=${encodeURIComponent(finalMessage)}`, '_blank');
+  };
+
   return (
-    <form action={FormSubmission} id="contactForm" className={twMerge('', containerClass)}>
+    <form id="contactForm" className={twMerge('', containerClass)}>
       {title && <h2 className={`${description ? 'mb-2' : 'mb-4'} text-2xl font-bold`}>{title}</h2>}
       {description && <p className="mb-4">{description}</p>}
       <div className="mb-6">
@@ -70,7 +95,7 @@ const Form = ({
                   id={name}
                   name={name}
                   autoComplete={autocomplete}
-                  value={inputValues[index]}
+                  value={inputValues[name] || ''}
                   onChange={changeInputValueHandler}
                   placeholder={placeholder}
                   className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
@@ -88,9 +113,9 @@ const Form = ({
                   <input
                     id={label}
                     type="radio"
-                    name={label}
-                    value={`value${index}`}
-                    checked={radioBtnValue === `value${index}`}
+                    name="reason"
+                    value={label}
+                    checked={radioBtnValue === label}
                     onChange={changeRadioBtnsHandler}
                     className="cursor-pointer"
                   />
@@ -146,7 +171,8 @@ const Form = ({
           className={`${btnPosition === 'left' ? ' text-white text-left' : btnPosition === 'right' ? ' text-white text-right' : ' text-white text-center'}`}
         >
           <button
-            type={btn.type || 'button'}
+            type={'submit'}
+            onClick={handleSendMssg}
             // className={twMerge('btn text-white  dark:text-white', 'btn-purple-600', 'sm:mb-0')}
             className="btn bg-[#3B0270]/30 backdrop-blur-md text-black hover:text-white hover:bg-[#58077b] hover:backdrop-blur-md dark:bg-purple-500 dark:text-black sm:mb-0"
           >

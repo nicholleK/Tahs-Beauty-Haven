@@ -5,7 +5,7 @@ interface DividerLine {
 }
 
 const DividerLine = ({ dividerLineClass }: DividerLine) => (
-  <hr className={twMerge('border-gray-200 dark:border-gray-700 my-4', dividerLineClass)} />
+  <hr className={twMerge('border-gray-200 dark:border-none my-8 ', dividerLineClass)} />
 );
 
 export default DividerLine;

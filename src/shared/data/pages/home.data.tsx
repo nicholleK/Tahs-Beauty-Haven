@@ -21,6 +21,7 @@ import {
   ContentProps,
   FAQsProps,
   FeaturesProps,
+  FloatingBtnProps,
   HeroProps,
   PricingProps,
   SocialProofProps,
@@ -49,6 +50,17 @@ import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import gasImg from '~/assets/images/gas.jpg';
+import ItemGrid from '~/components/common/ItemGrid';
+
+//Floating btn
+export const floatingBtn: FloatingBtnProps = {
+  callToAction: {
+    text: 'Book Now',
+    href: '/booking',
+    colorClass:
+      'btn bg-[#3B0270]/30 backdrop-blur-md text-black hover:bg-[#500073]   hover:text-white hover:backdrop-blur-md dark:bg-purple-500 dark:text-black',
+  },
+};
 
 // Hero data on Home page *******************
 // HERO
@@ -84,12 +96,7 @@ export const heroHome: HeroProps = {
     },
   ],
 
-  title: (
-    <>
-      Experience Hair Perfection
-      {/* <br></br> */}
-    </>
-  ),
+  title: ' Experience Hair Perfection',
   subtitle: (
     <>
       Welcome to <strong>Tah's Beauty Haven</strong>, where you come to relax, unwind and let us bring your hair dreams
@@ -154,161 +161,17 @@ export const servicesHomeOverview: TestimonialsProps = {
   },
 };
 
-// SocialProof data on Home page *******************
-// export const socialProofHome: SocialProofProps = {
-//   id: 'socialProof-on-home',
-//   hasBackground: true,
-//   images: [
-//     {
-//       link: 'https://nextjs.org/',
-//       src: nextJsLogo,
-//       alt: 'NextJs Logo',
-//     },
-//     {
-//       link: 'https://react.dev/',
-//       src: reactLogo,
-//       alt: 'React Logo',
-//     },
-//     {
-//       link: 'https://tailwindcss.com/',
-//       src: tailwindCssLogo,
-//       alt: 'Tailwind CSS Logo',
-//     },
-//     {
-//       link: 'https://www.typescriptlang.org/',
-//       src: typescriptLogo,
-//       alt: 'Typescript Logo',
-//     },
-//   ],
-// };
-
-// Features data on Home page *******************
-
-// export const featuresHome: FeaturesProps = {
-//   id: 'features-on-home',
-//   hasBackground: false,
-//   columns: 3,
-//   header: {
-//     title: (
-//       <>
-//         What you get with <span className="whitespace-nowrap">TailNext</span>
-//       </>
-//     ),
-//     subtitle:
-//       "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
-//     tagline: 'Features',
-//   },
-//   items: [
-//     {
-//       title: 'Next.Js + Tailwind CSS Integration',
-//       description:
-//         'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-//       icon: IconBrandTailwind,
-//       callToAction: {
-//         text: 'Discover now',
-//         href: '/',
-//       },
-//     },
-//     {
-//       title: 'Ready-to-use Components',
-//       description:
-//         'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-//       icon: IconComponents,
-//       callToAction: {
-//         text: 'Discover now',
-//         href: '/',
-//       },
-//     },
-//     {
-//       title: 'Best Practices',
-//       description:
-//         'By prioritizing maintainability and scalability through coding standards and design principles, your website stays robust and efficient.',
-//       icon: IconListCheck,
-//       callToAction: {
-//         text: 'Discover now',
-//         href: '/',
-//       },
-//     },
-//     {
-//       title: 'Excellent Page Speed',
-//       description:
-//         'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-//       icon: IconRocket,
-//       callToAction: {
-//         text: 'Discover now',
-//         href: '/',
-//       },
-//     },
-//     {
-//       title: 'Search Engine Optimization (SEO)',
-//       description:
-//         "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
-//       icon: IconArrowsRightLeft,
-//       callToAction: {
-//         text: 'Discover now',
-//         href: '/',
-//       },
-//     },
-//     {
-//       title: 'Open to new ideas and contributions',
-//       description:
-//         'We welcome new ideas and contributions to our platform. Whether you have feature suggestions, want to contribute code, or share insights, our platform is open for collaboration.',
-//       icon: IconBulb,
-//       callToAction: {
-//         text: 'Discover now',
-//         href: '/',
-//       },
-//     },
-//   ],
-// };
-
-// Content data on Home page *******************
-// export const contentHomeOne: ContentProps = {
-//   id: 'contentOne-on-home-one',
-//   hasBackground: true,
-//   header: {
-//     title: 'Aliquip definiebas ad est',
-//     subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-//     tagline: 'Content',
-//   },
-//   content:
-//     'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
-//   items: [
-//     {
-//       title: 'Per ei quaeque sensibus',
-//       description:
-//         'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
-//     },
-//     {
-//       title: 'Cu imperdiet posidonium sed',
-//       description:
-//         'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
-//     },
-//     {
-//       title: 'Nulla omittam sadipscing mel ne',
-//       description:
-//         'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
-//     },
-//   ],
-//   image: {
-//     src: cameraFrontImg,
-//     alt: 'Colorful Image',
-//   },
-//   isReversed: false,
-//   isAfterContent: false,
-// };
-
-// POLICIES
+// BOOKING POLICIES
 export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
-  hasBackground: false,
+  hasBackground: true,
 
   content: 'Booking Policies',
-  items: [
+
+  items2: [
     {
       title: (
         <>
-          {' '}
           A <strong>NON-REFUNDABLE </strong> deposit of 30% of your total is required to secure your appointment.{' '}
         </>
       ),
@@ -316,8 +179,8 @@ export const contentHomeTwo: ContentProps = {
     {
       title: (
         <>
-          {' '}
-          Cancellations & rescheduling can only be done <strong>up to 24 hours</strong> before your appointment.{' '}
+          Cancellations & rescheduling can only be done <strong>up to 24 hours</strong> before your appointment via the
+          appropriate means used to book.
         </>
       ),
     },
@@ -368,117 +231,6 @@ export const contentHomeTwo: ContentProps = {
   isReversed: true,
   isAfterContent: true,
 };
-
-// Steps data on Home page *******************
-// export const stepsHome: StepsProps = {
-//   id: 'steps-on-home',
-//   hasBackground: false,
-//   isReversed: false,
-//   isImageDisplayed: true,
-//   image: {
-//     src: gasImg,
-//     alt: 'Steps image',
-//   },
-//   header: {
-//     title: 'Sed ac magna sit amet risus tristique interdum.',
-//   },
-//   items: [
-//     {
-//       title: 'Step 1',
-//       description:
-//         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-//       icon: IconArrowDown,
-//     },
-//     {
-//       title: 'Step 2',
-//       description:
-//         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-//       icon: IconArrowDown,
-//     },
-//     {
-//       title: 'Step 3',
-//       description:
-//         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-//       icon: IconArrowDown,
-//     },
-//     {
-//       title: 'Ready!',
-//     },
-//   ],
-// };
-
-// FAQS data on Home page *******************
-// export const testimonialsHome: TestimonialsProps = {
-//   id: 'testimonials-on-home',
-//   hasBackground: true,
-//   header: {
-//     title: 'What our customers say about us',
-//     subtitle:
-//       'Etiamm sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
-//   },
-//   testimonials: [
-//     {
-//       name: 'Tayla Kirsten',
-//       job: 'Marketing Manager',
-//       testimonial: `I'm impressed by the speed and performance of these templates. My website now loads in the blink of an eye, significantly enhancing my visitors' experience. Thanks to TailNext, my online business is thriving.`,
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-//         alt: 'Tayla Kirsten',
-//       },
-//       href: '/',
-//     },
-//     {
-//       name: 'Silver Jordan',
-//       job: 'Senior Marketer',
-//       testimonial: `I had never found it so easy to customize a website. TailNext's templates are incredibly flexible, and with Tailwind CSS, I've managed to give my website the look and feel I always wanted. Highly recommended!`,
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-//         alt: 'Silver Jordan',
-//       },
-//       href: '/',
-//     },
-//     {
-//       name: 'Kelsey Arden',
-//       job: 'Co-Founder & CEO',
-//       testimonial: `As a beginner in web development, I really needed clear guidance. Tailnext made it possible. I was able to install and customize my website seamlessly, and I'm thrilled with the results!`,
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-//         alt: 'Kelsey Arden',
-//       },
-//       href: '/',
-//     },
-//     {
-//       name: 'Sarah Johnson',
-//       job: 'Business Owner',
-//       testimonial: `They've not only saved me a ton of time but have also made my websites look incredibly professional. The level of detail and thought that went into designing these templates is truly impressive.`,
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-//         alt: 'Sarah Johnson',
-//       },
-//       href: '/',
-//     },
-//     {
-//       name: 'Keith Young',
-//       job: 'Freelance Developer',
-//       testimonial: `The clean code and integration with Next.js make my projects a breeze. Plus, the responsive design ensures that my clients' websites look amazing on any device. These templates have become my secret weapon for success!`,
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-//         alt: 'Keith Young',
-//       },
-//       href: '/',
-//     },
-//     {
-//       name: 'Lisa Gordon',
-//       job: 'Project Manager',
-//       testimonial: `Their templates are not only stunning but also user-friendly. The support I received from their community has been exceptional. I'm proud to say that I've built my dream website with TailNext.`,
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-//         alt: 'Lisa Gordon',
-//       },
-//       href: '/',
-//     },
-//   ],
-// };
 
 // FAQS data on Home page *******************
 export const faqs2Home: FAQsProps = {
@@ -725,19 +477,21 @@ export const faqs2Home: FAQsProps = {
 // };
 
 // ContactS AND BOOKING data on Home page *******************
+
 export const contactHome: ContactProps = {
-  hasBackground: false,
+  hasBackground: true,
+  // background: { backgroundColor: 'black' },
   header: {
     title: 'Get in Touch',
     subtitle: 'Book an appointment below',
     // tagline: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    'Experience confidence, comfort, and professional care — all in one place. Whether you’re booking your next treatment or have a question for our team, we’re just a message away. Let’s create your perfect look together',
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Auckland Park'],
+      description: ['189 Perth Road. Westdene'],
       icon: IconMapPin,
     },
     {

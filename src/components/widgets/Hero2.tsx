@@ -30,7 +30,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, callToAction2, image }:
           </div>
           <div className="block flex-1 items-center md:flex">
             <div className="relative m-auto h-full max-w-4xl object-cover">
-              {image && (
+              {/* {image && (
                 <Image
                   className="mx-auto h-full w-auto rounded-md bg-gray-400 object-cover drop-shadow-2xl dark:bg-slate-700"
                   src={image.src}
@@ -42,7 +42,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, callToAction2, image }:
                   placeholder="blur"
                   priority
                 />
-              )}
+              )} */}
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { IconMenu, IconX } from '@tabler/icons-react';
+import { IconMenu3, IconX } from '@tabler/icons-react';
 import { ToggleMenuProps } from '~/shared/types';
 
 const ToggleMenu = ({ handleToggleMenuOnClick, isToggleMenuOpen }: ToggleMenuProps) => (
@@ -10,7 +10,11 @@ const ToggleMenu = ({ handleToggleMenuOnClick, isToggleMenuOpen }: ToggleMenuPro
     aria-label="Toggle Menu"
     onClick={handleToggleMenuOnClick}
   >
-    {isToggleMenuOpen ? <IconX className="h-6 w-6" /> : <IconMenu className="h-6 w-6" />}
+    {isToggleMenuOpen ? (
+      <IconX className="h-6 w-6 text-black dark:text-white" />
+    ) : (
+      <IconMenu3 className="h-6 w-6  text-black dark:text-white" />
+    )}
   </button>
 );
 
