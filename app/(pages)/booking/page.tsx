@@ -8,13 +8,13 @@ import Booking from '~/components/widgets/Booking';
 import Testimonials from '~/components/widgets/Testimonials';
 import {
   callToActionServices,
-  contentServicesOne,
-  contentServicesTwo,
-  faqsServices,
-  features2Services,
-  features4Services,
+  // contentServicesOne,
+  // contentServicesTwo,
+  // faqsServices,
+  // features2Services,
+  // features4Services,
   bookingServices,
-  testimonialsServices,
+  // testimonialsServices,
 } from '~/shared/data/pages/booking.data';
 
 export const metadata: Metadata = {
@@ -25,12 +25,12 @@ const Page = () => {
   return (
     <>
       <Booking {...bookingServices} />
-      <Features2 {...features2Services} />
+      {/* <Features2 {...features2Services} />
       <Content {...contentServicesOne} />
       <Content {...contentServicesTwo} />
       <Features4 {...features4Services} />
       <Testimonials {...testimonialsServices} />
-      <FAQs {...faqsServices} />
+      <FAQs {...faqsServices} /> */}
       <CallToAction {...callToActionServices} />
     </>
   );

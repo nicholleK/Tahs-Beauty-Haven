@@ -7,14 +7,14 @@ import Features4 from '~/components/widgets/Features4';
 import Hero from '~/components/widgets/Hero';
 import Testimonials from '~/components/widgets/Testimonials';
 import {
-  callToActionServices,
-  contentServicesOne,
-  contentServicesTwo,
-  faqsServices,
+  // callToActionServices,
+  // contentServicesOne,
+  // contentServicesTwo,
+  // faqsServices,
   features2Services,
-  features4Services,
+  // features4Services,
   heroServices,
-  testimonialsServices,
+  // testimonialsServices,
 } from '~/shared/data/pages/services.data';
 
 export const metadata: Metadata = {
@@ -26,12 +26,12 @@ const Page = () => {
     <>
       <Hero {...heroServices} />
       <Features2 {...features2Services} />
-      <Content {...contentServicesOne} />
+      {/* <Content {...contentServicesOne} />
       <Content {...contentServicesTwo} />
       <Features4 {...features4Services} />
-      <Testimonials {...testimonialsServices} />
-      <FAQs {...faqsServices} />
-      <CallToAction {...callToActionServices} />
+      <Testimonials {...testimonialsServices} /> */}
+      {/* <FAQs {...faqsServices} />
+      <CallToAction {...callToActionServices} /> */}
     </>
   );
 };
