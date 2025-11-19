@@ -107,34 +107,34 @@ export const featuresFourAboutTwo: FeaturesProps = {
     {
       title: 'Customer-centricity',
       description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
-      icon: IconUser,
+      icon: <IconUser />,
     },
     {
       title: 'Innovation and adaptability',
       description:
         'Etiam ornare, purus nec venenatis porttitor, velit leo convallis dui, at porttitor nibh tortor quis velit.',
-      icon: IconBulb,
+      icon: <IconBulb />,
     },
     {
       title: 'Quality assurance',
       description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
-      icon: IconThumbUp,
+      icon: <IconThumbUp />,
     },
     {
       title: 'Accessibility and customization',
       description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
-      icon: IconAdjustments,
+      icon: <IconAdjustments />,
     },
     {
       title: 'Collaboration and partnership',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
-      icon: IconHeartHandshake,
+      icon: <IconHeartHandshake />,
     },
     {
       title: 'Ethical and responsible design',
       description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
-      icon: IconHomeEco,
+      icon: <IconHomeEco />,
     },
   ],
 };
@@ -155,31 +155,31 @@ export const stepsAbout: StepsProps = {
       title: 'Our foundation',
       description:
         'Donec pharetra, justo a rutrum venenatis, augue erat porta leo, non eleifend dui lectus ut turpis. Fusce tincidunt mattis magna eu commodo. Proin non facilisis enim, ut luctus dolor.',
-      icon: IconNumber1,
+      icon: <IconNumber1 />,
     },
     {
       title: 'The early years',
       description:
         'Nunc scelerisque dui non nulla faucibus, sed elementum urna congue. Donec varius nisi sit amet massa malesuada euismod. Donec auctor interdum leo eget ultricies.',
-      icon: IconNumber2,
+      icon: <IconNumber2 />,
     },
     {
       title: 'Growth',
       description:
         'Vestibulum euismod dolor vel magna consectetur, vitae ornare metus finibus. Nam nec magna lacinia, cursus purus ut, pellentesque ex. Aliquam nec porta sapien, nec iaculis odio. Donec sed lacus arcu.',
-      icon: IconNumber3,
+      icon: <IconNumber3 />,
     },
     {
       title: 'Expanding horizons',
       description:
         'Aenean mollis est ac quam viverra, eget dictum justo iaculis. Morbi venenatis neque sed blandit faucibus. Pellentesque sit amet justo at ligula eleifend lacinia. Etiam nec orci quam.',
-      icon: IconNumber4,
+      icon: <IconNumber4 />,
     },
     {
       title: 'Our ongoing commitment',
       description:
         'Sed vel purus a odio tincidunt mollis. Nam et tortor est. Aliquam sodales interdum tortor ac condimentum. Suspendisse laoreet nulla est, ac luctus est tempus ut.',
-      icon: IconNumber5,
+      icon: <IconNumber5 />,
     },
   ],
 };
@@ -199,32 +199,32 @@ export const features3About: FeaturesProps = {
     {
       title: 'Customer engagement',
       description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
-      icon: IconCirclesRelation,
+      icon: <IconCirclesRelation />,
     },
     {
       title: 'Creativity and design excellence',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      icon: IconPalette,
+      icon: <IconPalette />,
     },
     {
       title: 'Continuous learning',
       description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
-      icon: IconBook,
+      icon: <IconBook />,
     },
     {
       title: 'Collaboration and cross-functionality',
       description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
-      icon: IconPuzzle2,
+      icon: <IconPuzzle2 />,
     },
     {
       title: 'Entrepreneurial spirit',
       description: 'Phasellus interdum placerat enim sed vehicula. Ut tincidunt, magna in iaculis maximus.',
-      icon: IconFlame,
+      icon: <IconFlame />,
     },
     {
       title: 'Employee well-being and balance',
       description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
-      icon: IconScale,
+      icon: <IconScale />,
     },
   ],
 };
@@ -245,19 +245,19 @@ export const featuresAbout: FeaturesProps = {
       title: 'Global recognition',
       description:
         'Nullam porttitor lacus elit, sed pellentesque eros aliquam eget. Phasellus interdum placerat enim sed vehicula. Ut tincidunt, magna in iaculis maximus, lectus ante dignissim neque, imperdiet sodales enim augue a quam.',
-      icon: IconAward,
+      icon: <IconAward />,
     },
     {
       title: 'Innovator of the year award',
       description:
         'Cras mollis elit massa, vel interdum libero molestie a. Nulla facilisi. Suspendisse cursus non sapien ut tincidunt. Sed non tortor sit amet nisl tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-      icon: IconAward,
+      icon: <IconAward />,
     },
     {
       title: 'Sustainability award',
       description:
         'Sed non tortor sit amet nisl tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in tempor orci. Vestibulum velit justo, dignissim quis nisl nec, scelerisque ultrices mi sapien diam quis elit.',
-      icon: IconAward,
+      icon: <IconAward />,
     },
   ],
 };
@@ -601,17 +601,17 @@ export const contactAbout: ContactProps = {
     {
       title: 'Our Address',
       description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
-      icon: IconMapPin,
+      icon: <IconMapPin />,
     },
     {
       title: 'Contact',
       description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
-      icon: IconPhoneCall,
+      icon: <IconPhoneCall />,
     },
     {
       title: 'Working hours',
       description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
-      icon: IconClock,
+      icon: <IconClock />,
     },
   ],
   form: {

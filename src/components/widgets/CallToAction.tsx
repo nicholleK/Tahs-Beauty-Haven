@@ -3,6 +3,7 @@ import CTA from '../common/CTA';
 import WidgetWrapper from '../common/WidgetWrapper';
 
 const CallToAction = ({ title, subtitle, callToAction, id, hasBackground = false }: CallToActionProps) => {
+  if (!callToAction) return null;
   const { text, href } = callToAction as CallToActionType;
 
   return (

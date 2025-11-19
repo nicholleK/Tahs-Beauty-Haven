@@ -1,28 +1,32 @@
 import { twMerge } from 'tailwind-merge';
 import { WrapperTagProps } from '~/shared/types';
 import Background from './Background';
+import React from 'react';
 
-const WidgetWrapper = ({ children, id, hasBackground, containerClass }: WrapperTagProps) => (
-  <section className="relative not-prose scroll-mt-[72px]  " id={id}>
-    <>
-      <div>
-        {hasBackground && (
-          <div className="absolute inset-0  w-full h-full">
-            <Background hasBackground={hasBackground} />
-          </div>
-        )}
-      </div>
-      <div
-        className={twMerge(
-          'mx-auto max-w-7xl px-4 py-6 my-6',
-          // 'relative mx-auto max-w-7xl px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default',
-          containerClass,
-        )}
-      >
-        {children}
-      </div>
-    </>
-  </section>
-);
+const WidgetWrapper = ({ children, id, hasBackground, containerClass, background }: WrapperTagProps) => {
+  const hasChildren = React.Children.count(children) > 0;
+  const hasBg = hasBackground || background;
+
+  // If no content at all, return nothing
+  if (!hasChildren || !hasBg) return null; //THIS DAMNING CODE section GAVE ME ZOOMIES
+
+  let bgElement: React.ReactNode = null;
+  if (hasBackground) {
+    bgElement = <Background hasBackground={hasBackground} />;
+  } else if (background) {
+    if (React.isValidElement(background)) {
+      bgElement = background;
+    } else if (typeof background === 'object') {
+      bgElement = <div className="absolute inset-0 w-full h-full" style={background as React.CSSProperties} />;
+    }
+  }
+
+  return (
+    <section className="relative not-prose scroll-mt-[72px]" id={id}>
+      {bgElement && <>{bgElement}</>}
+      {hasChildren && <div className={twMerge('mx-auto max-w-7xl px-4 py-6', containerClass)}>{children}</div>}
+    </section>
+  );
+};
 
 export default WidgetWrapper;

@@ -1,0 +1,15 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: IBMPlexSerif-Regular
+font link: https://fonts.google.com/specimen/IBM+Plex+Serif
+font author: Mike Abbink
+font author site: https://www.mikeabbink.com/
+Slogan Font: OFLGoudyStMTT.ttf
+
+
+fontColor: {"hex":"#D2CECE"}
+bgColor: {"hex":"#8B4980"}
+
+sloganColor: {"hex":"#0E0E0E"}
+      

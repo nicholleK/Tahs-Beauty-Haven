@@ -24,9 +24,9 @@ const ToggleDarkMode = () => {
     >
       {mounted ? (
         currentTheme === 'dark' ? (
-          <IconMoon className="h-5 w-5" />
+          <IconMoon className="h-5 w-5 " color="white" />
         ) : (
-          <IconSun className="h-5 w-5" />
+          <IconSun className="h-5 w-5" color="black" />
         )
       ) : (
         <div className="h-5 w-5"></div>

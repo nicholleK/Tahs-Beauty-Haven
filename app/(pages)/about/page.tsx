@@ -1,3 +1,4 @@
+'use client';
 import type { Metadata } from 'next';
 import Contact from '~/components/widgets/Contact';
 
@@ -17,30 +18,29 @@ import {
   features3About,
   hero2About,
   statsAbout,
- 
   testimonials2About,
   featuresAbout,
   // teamAbout,
 } from '~/shared/data/pages/about.data';
 
-export const metadata: Metadata = {
-  title: `About us`,
-};
+// export const metadata: Metadata = {
+//   title: `About us`,
+// };
 
 const Page = () => {
   return (
     <>
-      <Hero2 {...hero2About} />
+      {/* <Hero2 {...hero2About} /> */}
       <Stats {...statsAbout} />
       <Features4 {...featuresFourAbout} />
       <Features4 {...featuresFourAboutTwo} />
-     
+
       <Features3 {...features3About} />
       <Features {...featuresAbout} />
       {/* <Team2 {...teamAbout} /> */}
       <Testimonials2 {...testimonials2About} />
       <FAQs {...faqsAbout} />
-      <Contact {...contactAbout} />
+      {/* <Contact {...contactAbout} /> */}
     </>
   );
 };
