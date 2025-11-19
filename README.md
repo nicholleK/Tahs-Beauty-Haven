@@ -1,24 +1,23 @@
-# Tailnext
 
-**Tailnext** is a free and open-source template to make your website using **[NextJS](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account best practices.
+# Tah's Beauty Haven (TBH)
+
+#### Tahs Beauty Haven (TBH) is a modern hairdresser’s client booking website designed to provide customers with a seamless and convenient experience. It allows users to browse through a wide range of hairstyles and services, view detailed descriptions and pricing, and easily book appointments online. 
+#### The platform simplifies salon management, enhances customer engagement, and helps ensure that clients can schedule their preferred hairdo appointments anytime, anywhere.
 
 ## Features
 
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode**.
-- ✅ **Production-ready** scores in [Lighthouse](https://web.dev/measure/) and [PageSpeed Insights](https://pagespeed.web.dev/) reports.
-- ✅ **Image optimization** and **Font optimization**.
-- ✅ Fast and **SEO friendly blog**.
-- ✅ Generation of **project sitemap** and **robots.txt** based on your routes.
+- ✅ Appointment booking using **[Cal.com](https://cal.com/)**
+- ✅ Gallery of previous work done
+- ✅ Services page with images and prices of styles offered
+
 
 <br>
 
-<img src="./screenshot.jpg" alt="Tailnext Theme Screenshot">
+<img width="1901" height="936" alt="image" src="https://github.com/user-attachments/assets/a474746b-b7e6-4093-90e4-c6bdaf12ab26" />
 
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/tailnext?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/tailnext/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/tailnext#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/tailnext/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/tailnext)
+
+[![Maintained](https://img.shields.io/badge/Maintained%3F-Definitely-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
+>>>>>>> 9c645164c2c37ff8274ee2e45a9a9f31b562ff90
 
 <br>
 
@@ -26,15 +25,15 @@
 <summary>Table of Contents</summary>
 
 - [Demo](#demo)
+- [Tech Stack](#tech-stack)
+>>>>>>> 9c645164c2c37ff8274ee2e45a9a9f31b562ff90
 - [Getting started](#getting-started)
   - [Project structure](#project-structure)
   - [Commands](#commands)
   - [Configuration](#configuration)
   - [Deploy](#deploy)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
-- [License](#license)
+>>>>>>> 9c645164c2c37ff8274ee2e45a9a9f31b562ff90
 
 </details>
 
@@ -48,15 +47,15 @@
 
 ## Getting started
 
-- Clone: `git clone https://github.com/onwidget/tailnext.git`
-- Enter in the directory: `cd tailnext`
+- Clone: `git clone https://github.com/nicholleK/Tahs-Beauty-Haven.git`
+- Enter in the directory: `cd Tahs-Beauty-Haven`
 - Install dependencies: `npm install`
 - Start the development server: `npm run dev`
 - View project in local environment: `localhost:3000`
 
 ### Project structure
 
-Inside **Tailnext** template, you'll see the following folders and files:
+Inside the **Tahs-Beauty-Haven** folder, you'll see the following folders and files:
 
 ```
 /
@@ -64,14 +63,21 @@ Inside **Tailnext** template, you'll see the following folders and files:
 ├── app/
 │   ├── (blog)
 │   │   ├── [slug]
-|   |   |   └── page.js
-|   |   └── blog
-|   |       └── page.js
-│   ├── head.js
-│   ├── layout.js
-│   └── page.js
+|   |   |   └── page.tsx
+│   ├── (pages)
+|   |       └── about/
+|   |       └── booking/
+|   |       └── contact/
+|   |       └── faqs/
+|   |       └── services/
+|   |       └── gallery/
+|   |       └── contact/
+│   ├── api/
+│   ├── layout.tsx
+│   └── page.tsx
 ├── public/
 │   └── favicon.svg
+│   └── videos/
 ├── src/
 │   ├── assets/
 │   │   ├── images/
@@ -93,10 +99,6 @@ Inside **Tailnext** template, you'll see the following folders and files:
 ├── package.json
 └── ...
 ```
-
-[![Edit Tailnext on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/tailnext/tree/main)
-
-> **Seasoned next.js expert?** Delete this file. Update `config.mjs` and contents. Have fun!
 
 <br>
 
@@ -136,35 +138,14 @@ Now, your website is ready to be deployed. All generated files are located at
 `dist` folder, which you can deploy the folder to any hosting service you
 prefer.
 
-#### Deploy to Netlify
+#### Deploy to Netlify or Vercel
 
 Clone this repository on own GitHub account and deploy to Netlify:
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/tailnext.git)
-
-#### Deploy to Vercel
-
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Ftailnext)
-
 <br>
-
-## Roadmap
-
-Coming soon ..
-
-<br>
-
-## Contributing
-
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
 
 ## Acknowledgements
 
 Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/tailnext/graphs/contributors).
 
-## License
 
-**Tailnext** is licensed under the MIT license — see the [LICENSE](https://github.com/onwidget/tailnext/blob/main/LICENSE.md) file for details.
