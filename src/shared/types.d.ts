@@ -37,7 +37,7 @@ type HeadlineProps = {
 type Icon = TablerIcon;
 
 type CallToActionType = {
-  text?: ReactNode | string | Icon;
+  text?: ReactNode | string ;
   href: string;
   icon?: Icon;
   targetBlank?: boolean;
