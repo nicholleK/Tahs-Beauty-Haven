@@ -18,6 +18,7 @@ const itemVariants = {
 const ItemGrid = ({
   id,
   items,
+  text,
   items2,
   columns,
   defaultColumns,
@@ -93,7 +94,7 @@ const ItemGrid = ({
           ))}
         </motion.div>
       )}
-
+      {text && text}
       {/* ITEMS 2: Simple list */}
       {items2 && (
         <motion.ul
@@ -110,12 +111,12 @@ const ItemGrid = ({
               key={id ? `item2-${id}-${index}` : `item2-${index}`}
             >
               {title && (
-                <span className={twMerge(' font-extralight, titleClass, text-gray-700 dark:text-slate-400 ml-2')}>
+                <span className={twMerge(' font-extralight', titleClass, 'text-gray-700 dark:text-slate-400 ')}>
                   {title}
                 </span>
               )}
               {description && (
-                <p className={twMerge(' text-gray-600 dark:text-slate-400 ml-2', descriptionClass)}>{description}</p>
+                <p className={twMerge(' text-gray-600 dark:text-slate-400', descriptionClass)}>{description}</p>
               )}
             </motion.li>
           ))}

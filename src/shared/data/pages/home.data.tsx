@@ -129,10 +129,10 @@ export const servicesHomeOverview: TestimonialsProps = {
   testimonials: [
     {
       testimonial: `testimonial1`,
-      text: 'test1',
+      text: 'Faux Locs',
       image: {
         src: pic7,
-        alt: 'Cornrows',
+        alt: 'Faux Locs',
       },
     },
     {
@@ -145,10 +145,10 @@ export const servicesHomeOverview: TestimonialsProps = {
     },
     {
       testimonial: `testimonial3`,
-      text: 'test3',
+      text: 'Conrows',
       image: {
         src: pic9,
-        alt: 'Braids',
+        alt: 'Conrows',
       },
     },
   ],
@@ -272,212 +272,7 @@ export const faqs2Home: FAQsProps = {
   ],
 };
 
-// Pricing data on Home page *******************
-// export const pricingHome: PricingProps = {
-//   id: 'pricing-on-home',
-//   hasBackground: true,
-//   header: {
-//     title: 'Prices for each plan',
-//     subtitle:
-//       'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
-//     // tagline: 'Pricing',
-//   },
-//   prices: [
-//     {
-//       title: 'basic',
-//       price: 29,
-//       period: 'per month',
-//       items: [
-//         {
-//           description: 'Etiam in libero, et volutpat',
-//         },
-//         {
-//           description: 'Aenean ac nunc dolor tristique',
-//         },
-//         {
-//           description: 'Cras scelerisque accumsan lib',
-//         },
-//         {
-//           description: 'In hac habitasse',
-//         },
-//       ],
-//       callToAction: {
-//         targetBlank: true,
-//         text: 'Free 7-day trial',
-//         href: '/',
-//       },
-//       hasRibbon: false,
-//     },
-//     {
-//       title: 'standard',
-//       price: 69,
-//       period: 'per month',
-//       items: [
-//         {
-//           description: 'Proin vel laoreet',
-//         },
-//         {
-//           description: 'Ut efficitur egestas',
-//         },
-//         {
-//           description: 'Pellentesque ut nibh',
-//         },
-//         {
-//           description: 'Donec fringilla sem',
-//         },
-//       ],
-//       callToAction: {
-//         targetBlank: true,
-//         text: 'Free 15-day trial',
-//         href: '/',
-//       },
-//       hasRibbon: true,
-//       ribbonTitle: 'Popular',
-//     },
-//     {
-//       title: 'premium',
-//       price: 199,
-//       period: 'per month',
-//       items: [
-//         {
-//           description: 'Curabitur suscipit risus',
-//         },
-//         {
-//           description: 'Aliquam blandit malesuada',
-//         },
-//         {
-//           description: 'Suspendisse sit amet',
-//         },
-//         {
-//           description: 'Suspendisse auctor dui',
-//         },
-//       ],
-//       callToAction: {
-//         targetBlank: true,
-//         text: 'Free 30-day trial',
-//         href: '/',
-//       },
-//       hasRibbon: false,
-//     },
-//   ],
-// };
-
-// Team data on Home page *******************
-// export const teamHome: TeamProps = {
-//   id: 'team-on-home',
-//   hasBackground: false,
-//   header: {
-//     title: 'Team Members',
-//     subtitle:
-//       'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
-//     // tagline: 'Team',
-//   },
-//   teams: [
-//     {
-//       name: 'Cindy Belcher',
-//       occupation: 'SEO Consultant',
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-//         alt: 'Cindy Belcher',
-//       },
-//       items: [
-//         {
-//           title: 'Know more on Twitter',
-//           icon: IconBrandTwitter,
-//           href: '#',
-//         },
-//         {
-//           title: 'Know more on Linkedin',
-//           icon: IconBrandLinkedin,
-//           href: '#',
-//         },
-//         {
-//           title: 'Contact by email',
-//           icon: IconMail,
-//           href: '#',
-//         },
-//       ],
-//     },
-//     {
-//       name: 'Toby Foster',
-//       occupation: 'Marketing Tech',
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
-//         alt: 'Toby Foster',
-//       },
-//       items: [
-//         {
-//           title: 'Know more on Twitter',
-//           icon: IconBrandTwitter,
-//           href: '#',
-//         },
-//         {
-//           title: 'Know more on Linkedin',
-//           icon: IconBrandLinkedin,
-//           href: '#',
-//         },
-//         {
-//           title: 'Contact by email',
-//           icon: IconMail,
-//           href: '#',
-//         },
-//       ],
-//     },
-//     {
-//       name: 'Clark Bourne',
-//       occupation: 'Content Manager',
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-//         alt: 'Clark Bourne',
-//       },
-//       items: [
-//         {
-//           title: 'Know more on Twitter',
-//           icon: IconBrandTwitter,
-//           href: '#',
-//         },
-//         {
-//           title: 'Know more on Linkedin',
-//           icon: IconBrandLinkedin,
-//           href: '#',
-//         },
-//         {
-//           title: 'Contact by email',
-//           icon: IconMail,
-//           href: '#',
-//         },
-//       ],
-//     },
-//     {
-//       name: 'Bella Chase',
-//       occupation: 'UX Designer',
-//       image: {
-//         src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-//         alt: 'Bella Chase',
-//       },
-//       items: [
-//         {
-//           title: 'Know more on Twitter',
-//           icon: IconBrandTwitter,
-//           href: '#',
-//         },
-//         {
-//           title: 'Know more on Linkedin',
-//           icon: IconBrandLinkedin,
-//           href: '#',
-//         },
-//         {
-//           title: 'Contact by email',
-//           icon: IconMail,
-//           href: '#',
-//         },
-//       ],
-//     },
-//   ],
-// };
-
 // ContactS AND BOOKING data on Home page *******************
-
 export const contactHome: ContactProps = {
   hasBackground: true,
   // background: { backgroundColor: 'black' },
@@ -501,7 +296,7 @@ export const contactHome: ContactProps = {
     },
     {
       title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      description: ['Monday - Friday: 07:00 - 18:00', 'Saturday & Sunday: 07:00 - 18:00'],
       icon: IconClock,
     },
   ],

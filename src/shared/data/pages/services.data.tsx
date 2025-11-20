@@ -67,102 +67,63 @@ export const features2Services: FeaturesProps = {
   },
   items: [
     {
+      image: pic5,
+      title: 'Sweet & Sour',
+      description: <>From R250</>,
+      color: { backgroundImage: 'linear-gradient(30deg, #DAD2FF 40%, #f3e8f4  60%)' },
+    },
+    {
       image: pic2,
-      title: 'Knotless Braids',
-      description: (
-        <>
-          <ul>
-            <li>small: R100</li>
-            <li>medium: R200</li>
-            <li>large: R300</li>
-          </ul>
-        </>
-      ),
+      title: 'Knotless Braids, Twists',
+      description: <>From R200</>,
       color: { backgroundImage: 'linear-gradient(145deg, #f3e8f4 40%, #DAD2FF  60%)' },
     },
     {
       image: pic3,
-      title: 'Box Braids',
+      title: 'Straight Back/Up',
       description: (
         <>
-          <ul>
+          From R150
+          {/* <ul>
             <li>small: R100</li>
             <li>medium: R200</li>
             <li>large: R300</li>
-          </ul>
+          </ul> */}
         </>
       ),
       color: { backgroundImage: 'linear-gradient(130deg, #DAD2FF 40%, #f3e8f4  60%)' },
     },
     {
-      image: pic4,
-      title: 'Freehand',
-      description: (
-        <>
-          <ul>
-            <li>small: R100</li>
-            <li>medium: R200</li>
-            <li>large: R300</li>
-          </ul>
-        </>
-      ),
-      color: { backgroundImage: 'linear-gradient(-120deg, #DAD2FF 40%, #f3e8f4  60%)' },
-    },
-    {
-      image: pic5,
-      title: 'Twist Braids',
-      description: (
-        <>
-          <ul>
-            <li>small: R100</li>
-            <li>medium: R200</li>
-            <li>large: R300</li>
-          </ul>
-        </>
-      ),
-      color: { backgroundImage: 'linear-gradient(30deg, #DAD2FF 40%, #f3e8f4  60%)' },
-    },
-    {
       image: pic6,
-      title: 'Faux Locs',
-      description: (
-        <>
-          <ul>
-            <li>small: R100</li>
-            <li>medium: R200</li>
-            <li>large: R300</li>
-          </ul>
-        </>
-      ),
+      title: 'Faux Locs Installation',
+      description: <>From R150</>,
       color: { backgroundImage: 'linear-gradient(-120deg, #DAD2FF 40%, #f3e8f4  60%)' },
     },
+
     {
       image: pic2,
-      title: 'Cornrows',
-      description: (
-        <>
-          <ul>
-            <li>small: R100</li>
-            <li>medium: R200</li>
-            <li>large: R300</li>
-          </ul>
-        </>
-      ),
+      title: 'Half sew-ins Half braids, Cornrows',
+      description: <>From R150</>,
       color: { backgroundImage: 'linear-gradient(150deg, #DAD2FF 50%, #f3e8f4  51%)' },
     },
     {
-      isCard: false,
-      // title: 'Please Note:',
-      description: (
-        <>
-          <p>
-            {' '}
-            <strong>NB:</strong> Hair piece is not provided
-          </p>
-        </>
-      ),
+      image: pic4,
+      title: 'Freehand, Wash & Deep Conditioning',
+      description: <>From R60</>,
+      color: { backgroundImage: 'linear-gradient(-120deg, #DAD2FF 40%, #f3e8f4  60%)' },
     },
   ],
+  text: (
+    <>
+      <br></br>
+      <strong>Please Note:</strong>
+      <ul className="list-disc list-inside ml-4 text-gray-600">
+        <li>Prices differ based on the style, size & length.</li>
+        <li>Hair Piece is provided at an additional cost.</li>
+      </ul>
+    </>
+  ),
+
   callToAction: {
     text: 'Book Now',
     href: '/booking',

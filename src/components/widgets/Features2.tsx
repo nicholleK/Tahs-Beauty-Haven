@@ -2,7 +2,7 @@ import { FeaturesProps } from '~/shared/types';
 import Headline from '../common/Headline';
 import ItemGrid from '../common/ItemGrid';
 
-const Features2 = ({ header, items, items2, columns = 3, id, image, callToAction }: FeaturesProps) => {
+const Features2 = ({ header, items, text, items2, columns = 3, id, image, callToAction }: FeaturesProps) => {
   if (!header && !items && !items2 && !image && !callToAction) return null;
 
   return (
@@ -14,6 +14,7 @@ const Features2 = ({ header, items, items2, columns = 3, id, image, callToAction
           id={id}
           items={items}
           items2={items2}
+          text={text}
           columns={columns}
           defaultColumns={3}
           panelClass="card flex flex-start min-w-screen-sm items-stretch h-full"

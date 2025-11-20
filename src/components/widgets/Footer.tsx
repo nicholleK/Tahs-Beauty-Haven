@@ -24,7 +24,7 @@ const Footer = () => {
                         aria-label={label}
                         href={href}
                       >
-                        {label}
+                        <span className="sm:flex sm:items-center sm:text-center sm:justify-center">{label}</span>
                       </a>
                       {links.length - 1 !== index && <span className="mr-1 rtl:mr-0 rtl:ml-1"> · </span>}
                     </li>

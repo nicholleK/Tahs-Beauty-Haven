@@ -28,11 +28,13 @@ const Footer2 = () => {
               {socials.map(({ label, icon: Icon, href }, index) => (
                 <li key={`item-social-${index}`}>
                   <a
-                    className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                    className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-purple-500 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                     aria-label={label}
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {Icon && <Icon className="h-5 w-5" />}
+                    {Icon && <Icon className="h-5 w-5 " />}
                   </a>
                 </li>
               ))}
@@ -40,18 +42,18 @@ const Footer2 = () => {
           </div>
         </div>
         <div className="text-muted py-6 text-sm text-gray-700 dark:text-slate-400 md:flex md:items-center md:justify-between md:py-8">
-          <ul className="mb-4 flex pl-2 rtl:pl-0 rtl:pr-2 md:order-1 md:mb-0">
+          <ul className="mb-4 flex pl-2 rtl:pl-0 rtl:pr-2 md:order-1 md:mb-0 justify-center">
             {links &&
               links.map(({ label, href }, index) => (
                 <li key={`item-link-${index}`}>
                   <a
-                    className="duration-150 ease-in-out placeholder:transition hover:text-gray-700 hover:underline dark:text-gray-400"
+                    className=" duration-150 ease-in-out placeholder:transition hover:text-purple-700 hover:underline dark:text-gray-400"
                     aria-label={label}
                     href={href}
                   >
                     {label}
                   </a>
-                  {links.length - 1 !== index && <span className="mr-1 rtl:mr-0 rtl:ml-1"> · </span>}
+                  {links.length - 1 !== index && <span className="mr-1 rtl:mr-0 rtl:ml-1 "> · </span>}
                 </li>
               ))}
           </ul>
