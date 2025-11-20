@@ -99,8 +99,8 @@ export const heroHome: HeroProps = {
   title: ' Experience Hair Perfection',
   subtitle: (
     <>
-      Welcome to <strong>Tah's Beauty Haven</strong>, where you come to relax, unwind and let us bring your hair dreams
-      to life. Ready to transform your look with the latest trends and expert hands?
+      Welcome to <strong>Tah&apos;s Beauty Haven</strong>, where you come to relax, unwind and let us bring your hair
+      dreams to life. Ready to transform your look with the latest trends and expert hands?
     </>
   ),
 
