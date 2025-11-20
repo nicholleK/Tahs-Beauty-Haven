@@ -1,5 +1,5 @@
 {
-  "name": "Tahs-Beauty-Haven",
+  "name": "tahs-beauty-haven",
   "description": "A hairdresser's client booking website",
   "version": "1.0.0-beta.4",
   "private": true,
@@ -31,6 +31,7 @@
     "twilio": "^5.10.4"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^14.2.33",
     "@storybook/addon-a11y": "^7.6.10",
     "@storybook/addon-essentials": "^7.6.10",
     "@storybook/addon-interactions": "^7.6.10",
@@ -49,7 +50,7 @@
     "@types/react-dom": "18.3.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
-    "eslint-config-next": "^14.2.6",
+    "eslint-config-next": "^14.2.33",
     "eslint-plugin-storybook": "^0.8.0",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.4.41",
