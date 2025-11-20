@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Toaster } from 'react-hot-toast';
 import { SITE } from '~/config.js';
-
+import { Analytics } from '@vercel/analytics/next';
 import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 // import Announcement from '~/components/widgets/Announcement';
@@ -37,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps) {
           <Header />
           {/* <main>{children}</main> */}
           {children}
+          <Analytics />
           <Toaster position="top-right" />
           <Footer2 />
         </Providers>
