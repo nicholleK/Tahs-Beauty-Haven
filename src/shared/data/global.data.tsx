@@ -209,7 +209,7 @@ export const footerData: FooterProps = {
         Copyright{' '}
         <a className="font-semibold text-slate-900 dark:text-gray-200 hover:text-purple-600 hover:underline dark:hover:text-purple-600">
           {' '}
-          Tah's Beauty Haven
+          <span>Tah&apos;s Beauty Haven.</span>
         </a>{' '}
         · All rights reserved.
       </span>
@@ -257,10 +257,10 @@ export const footerData2: FooterProps = {
         Copyright &#169; 2025{' '}
         <a
           className="font-semibold text-slate-900 dark:text-gray-200 hover:text-purple-600 hover:underline dark:hover:text-purple-600"
-          href="https://onwidget.com/"
+          href="/"
         >
           {' '}
-          Tah's Beauty Haven.
+          <span>Tah&apos;s Beauty Haven.</span>
         </a>{' '}
       </span>
     </div>
