@@ -142,6 +142,7 @@ type ItemGrid = {
   id?: string;
   items?: Array<Item>;
   items2?: Array<Item2>;
+    text?:string | ReactNode;
   columns?: number;
   defaultColumns?: number;
   defaultIcon?: ReactElement;
@@ -298,6 +299,7 @@ type FeaturesProps = Widget & {
   header?: Header;
   items?: Array<Item>;
   items2?: Array<Item2>;
+  text?:string | ReactNode;
   /** How many columns should it have? */
   columns?: 1 | 2 | 3;
   /** Do you want the image to be displayed? */

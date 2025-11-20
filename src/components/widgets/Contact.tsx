@@ -15,7 +15,7 @@ const Contact = ({ header, content, items, form, id, hasBackground = true, image
     <div className="flex items-stretch justify-center" style={background}>
       <div className={`grid ${!content && !items ? 'md:grid-cols-1' : 'md:grid-cols-2'}`}>
         <div className="h-full pr-6">
-          {content && <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">{content}</p>}
+          {content && <p className="mt-3 mb-12 text-center text-lg text-gray-600 dark:text-slate-400">{content}</p>}
           <ul className="mb-6 md:mb-0">
             {items &&
               items.map(({ title, description, icon: Icon }, index) => (

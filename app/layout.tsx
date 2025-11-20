@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     default: SITE.title,
   },
   description: SITE.description,
+  icons: {
+    icon: '/logo/cover.png', //favicon
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps) {

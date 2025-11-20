@@ -2,7 +2,7 @@ import {
   IconBrandFacebook,
   IconBrandGithub,
   IconBrandInstagram,
-  IconBrandTwitter,
+  IconBrandTiktok,
   IconChevronDown,
   IconRss,
 } from '@tabler/icons-react';
@@ -196,7 +196,7 @@ export const footerData: FooterProps = {
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
+    { label: 'Twitter', icon: IconBrandTiktok, href: '#' },
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     // { label: 'RSS', icon: IconRss, href: '#' },
@@ -232,26 +232,30 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['123 Auckland Park'],
+      texts: ['189 Perth Road, Westdene'],
     },
     {
       title: 'Phone',
-      texts: ['Office Mobile: +27 78 779 1860', 'Alternative: +0123456789'],
+      texts: ['Office Mobile: +27 78 779 1860'],
     },
     {
       title: 'Email',
-      texts: ['tanyaradzwamaria@icloud.com', 'Site: https://example.com'],
+      texts: ['tanyaradzwamaria@icloud.com'],
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
+    {
+      label: 'Tik Tok',
+      icon: IconBrandTiktok,
+      href: 'https://www.tiktok.com/@tahs_beauty_haven?_r=1&_t=ZM-91YLJDW1gFg',
+    },
+    // { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
+    // { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     // { label: 'RSS', icon: IconRss, href: '#' },
     // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
   ],
   footNote: (
-    <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
+    <div className="flex mr-4 rtl:mr-0 rtl:ml-4 text-sm justify-center">
       <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
       <span>
         Copyright &#169; 2025{' '}

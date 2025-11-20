@@ -1,10 +1,10 @@
 module.exports.SITE = {
-  name: 'Tahs Beauty Haven',
+  name: "Tah's Beauty Haven",
 
-  origin: 'https://tailnext.vercel.app',
+  origin: 'https://tahs-beauty-haven-1dzn.vercel.app/',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Home',
+  title: "Tah's Beauty Haven",
   description: 'Hairdressing Booking System',
 };
